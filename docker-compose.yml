@@ -1,8 +1,8 @@
 version: '3'
 services:
-  database_produto:
-    image: mongo:4.0
-    container_name: 'mongo_db_produto'
+  #database_produto:
+  #  image: mongo:4.0
+  #  container_name: 'mongo_db_produto'
   service_produto:
     image: node:10.9
     volumes: 
