@@ -5,4 +5,9 @@ services:
     container_name: 'mongo_db_produto'
   service_produto:
     image: node:10.9
+    volumes: 
+      - ./express-delivery-produto:/express-delivery-produto
+    command: bash npm run start
+    ports:
+      - 80:80
     
