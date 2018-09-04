@@ -1,4 +1,5 @@
 FROM node:argon
+MAINTAINER conradobasso@gmail.com
 RUN mkdir /app
 WORKDIR /app
 COPY package.json /app

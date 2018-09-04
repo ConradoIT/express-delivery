@@ -4,10 +4,10 @@ services:
   #  image: mongo:4.0
   #  container_name: 'mongo_db_produto'
   service_produto:
-    image: node:10.9
+    image: nodeapp:0.1
     volumes: 
-      - ./express-delivery-produto:/express-delivery-produto
-    command: bash npm run start
-    ports:
-      - 80:80
+      - ./express-delivery-produto:/app/
+    command: npm install && 
+    ports: ["3000:80"]
+    
     
