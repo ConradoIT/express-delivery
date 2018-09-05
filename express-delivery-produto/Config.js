@@ -14,5 +14,7 @@ exports.addRoute = function(App, Config){
 
 exports.configDB = function(Mongoose) {
     Mongoose.Promise = global.Promise;
-    Mongoose.connect('mongodb://database-produto/produtosdb');
+    Mongoose.connect('mongodb://database_produto/dbproduto');
+    //Mongoose.connect('mongodb://conrado:conrado@ds123171.mlab.com:23171/dexp-cadastro-produto');
+    console.log('configurou o banco');
 }
