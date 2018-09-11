@@ -2,9 +2,17 @@ version: '3'
 services:
   database_produto:
     image: mongo:4.0
+  database_cliente:
+    image: mongo:4.0
   api_produto:
     image: produto-api-image:1.0
     links: 
       - database_produto
     ports:
+      - "80:3000"
+  api_cliente:
+    image: cliente-api-image:1.0
+    links: 
+      - database_cliente
+    ports: 
       - "80:3000"

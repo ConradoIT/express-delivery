@@ -1,0 +1,24 @@
+{
+    "routes": [
+    {
+       "host": "http://api_produto:3000/",
+       "methods": [ 
+          { "type": "GET", "path": "/Produto" }, 
+          { "type": "POST", "path": "/Produto" },
+          { "type": "GET", "path": "/Produto/:ProdutoID" }, 
+          { "type": "PUT", "path": "/Produto/:ProdutoID" },
+          { "type": "DELETE", "path": "/Produto/:ProdutoID" }
+       ]
+   },
+   {
+       "host": "http://api_cliente:3000/",
+       "methods": [
+          { "type": "GET", "path": "/Cliente" }, 
+          { "type": "POST", "path": "/Cliente" },
+          { "type": "PUT", "path": "/Cliente/:ClienteID" },
+          { "type": "GET", "path": "/Cliente/:ClienteID" },
+          { "type": "DELETE", "path": "/Cliente/:ClienteID" }
+       ]
+   }
+  ]
+}
