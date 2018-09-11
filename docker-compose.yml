@@ -4,6 +4,8 @@ services:
     image: mongo:4.0
   database_cliente:
     image: mongo:4.0
+  database_venda:
+    image: mongo:4.0
   api_produto:
     image: produto-api-image:1.0
     links: 
@@ -12,10 +14,15 @@ services:
     image: cliente-api-image:1.0
     links: 
       - database_cliente
+  api_venda:
+    image: venda-api-image:1.0
+    links:
+      - database_venda
   gatway-api:
     image: gateway-api-image:1.0       
     links: 
       - api_produto
       - api_cliente
+      - api_venda
     ports: 
       - "80:3000"

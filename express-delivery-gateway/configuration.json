@@ -19,6 +19,16 @@
           { "type": "GET", "path": "/Cliente/:ClienteID" },
           { "type": "DELETE", "path": "/Cliente/:ClienteID" }
        ]
+   },
+   {
+       "host": "http://api_venda:3000/",
+       "methods": [
+          { "type": "GET", "path": "/Venda" }, 
+          { "type": "POST", "path": "/Venda" },
+          { "type": "PUT", "path": "/Venda/:VendaID" },
+          { "type": "GET", "path": "/Venda/:VendaID" },
+          { "type": "DELETE", "path": "/Venda/:VendaID" }
+       ]
    }
   ]
 }
